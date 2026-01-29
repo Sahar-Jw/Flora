@@ -1,0 +1,618 @@
+/* GLOPALE STYLE START */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'inter';
+}
+:root{
+    --primary-color:#025595;
+    --primary-text-color:#222222;
+    --sec-text-color:#22222280;
+
+}
+.title{
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 39px;
+    color: var(--primary-text-color);
+}
+.sub-title{
+    font-size: 15px;
+    color: rgba(34, 34, 34, 0.5);
+    margin-bottom: 56px;
+}
+/* GLOPALE STYLE END */
+
+/* HEADER START */
+header{
+    /* NAV START */
+    nav{
+        width: 100vw;
+        height: 90px;
+        position: fixed;
+        z-index: 9;
+        top: 0%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 17px 70px;
+        background-color: #EFF8FF;
+            ul{
+                list-style: none;
+                display: flex;
+                gap: 30px;
+                    li{
+                        a{
+                            text-decoration: none;
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: var(--primary-text-color);
+                                &:hover{
+                                    color: var(--primary-color);
+                                }
+                        }
+                    }
+            }
+            .login{
+                width: 135px;
+                height: 38px;
+                padding: 10px 20px;
+                border-radius: 6px;
+                background-color: var(--primary-color);
+                border: none;
+                font-size: 14px;
+                color: #F5F5F5;
+                font-family: Inter;
+                cursor: pointer;
+                &:hover{
+                    border: 2px solid var(--primary-color);
+                    background-color: #EFF8FF;
+                    backdrop-filter: blur(10px);
+                    transition: all 0.5s linear;
+                    color: var(--primary-color);
+                }
+            }
+            .menu{
+                display: none;
+            }
+    }
+    /* NAV END */
+
+    /* HERO START */
+    .hero{
+        height: 100vh;
+        background-image: url(./../img/hero-bg.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: 65%;
+        background-color: #EFF8FF;
+        padding: 32px 70px;
+            h1{
+                max-width: 549px;
+                margin-top: 90px;
+                margin-bottom: 20px;
+                font-weight: 700;
+                font-size: 60px;
+                color: var(--primary-text-color);
+                line-height: 80px;
+            }
+            .hero-sub-title{
+                max-width: 424px;
+                margin-bottom: 50px;
+                font-size: 16px;
+                color: rgba(34, 34, 34, 0.5);
+            }
+                .hero-info{
+                    max-width: 866px;
+                    min-height: 100px;
+                    border-radius: 16px;
+                    background: #FFFFFFCC;
+                    backdrop-filter: blur(14px);
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                        .info-header{
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            img{
+                                width: 58px;
+                                height: 58px;
+                                padding: 16px;
+                                border-radius: 30px;
+                                background-color: #eef4f8;
+                            }
+                            .info-value{
+                                h2{
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    color: var(--primary-text-color);
+                                    margin-bottom: 10px;
+                                    line-height: 24px;
+                                }
+                                p{
+                                    font-size: 16px;
+                                    color: var(--sec-text-color);
+                                    margin-bottom: 0px;
+                                }
+                            }
+                        }
+    }
+    }
+    /* HERO END */
+}
+/* HEADER END */
+
+/* MAIN START */
+main{
+
+    /* HOW IT WORKS SECTION START */
+    .how-it-works{
+        padding: 94px 70px;
+            .how-it-works-details{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 34px;
+                    a{
+                        text-decoration: none;
+                        .how-it-works-card{
+                        padding: 30px 40px 0px;
+                        max-width: 380px;
+                        min-height: 255px;
+                        border-radius: 15px;
+                        cursor: pointer;
+                        &:hover{
+                            transition: all 0.5s ease-in-out;
+                            svg{
+                            margin-bottom: 20px;
+                                path{
+                                    fill: #ffffff;
+                                }
+                                }
+                            background-color: var(--primary-color);
+                            h2,p{
+                                color: #FFFFFF;
+                            }
+                        }
+                        svg{
+                            margin-bottom: 20px;
+                                path{
+                                    fill: var(--primary-color);
+                                }
+                        }
+                        h2{
+                            font-weight: 600;
+                            font-size: 22px;
+                            color: var(--primary-text-color);
+                            margin-bottom: 10px;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: rgba(34, 34, 34, 0.5);
+                        }
+                    }
+                    }
+            }
+    }
+    /* HOW IT WORKS SECTION END */
+    
+    /* FIND DREAM HOME SECTION START */
+    .find-dream-home{
+        height: 380px;
+        background-image: url(./../img/find-dream-home.jpg);
+        .find-dream-home-text{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 58px;
+            justify-content: center;
+            background-color: #00000068;
+                h1{
+                    font-weight: 700;
+                    font-size: 70px;
+                    color: #FFFFFF;
+                }
+                p {
+                    font-size: 30px;
+                    color: #FFFFFF;
+                    max-width: 544px;
+                    text-align: center;
+            }
+        }
+    }
+    /* FIND DREAM HOME SECTION END */
+    
+    /* MOST TRENDING SECTION START */
+    .most-trending{
+        padding: 94px 70px;
+            .most-trending-cards{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 25px;
+                    a{ 
+                        text-decoration: none;
+                        cursor: pointer;
+                        border-radius: 10px;
+                        &:hover{
+                                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.359);
+                                transition: all 0.3s linear;
+                            }
+                        .card{
+                        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+                        padding: 20px;
+                        border-radius: 10px;
+                            img{
+                                margin-bottom: 16px;
+                            }
+                            .card-text{
+                                width: 180px;
+                                margin-bottom: 38px;
+                                    span{
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        color: var(--primary-color);
+                                    }
+                                    h2{
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        color: var(--primary-text-color);
+                                        line-height: 29px;
+                                    }
+                            }
+                            .card-loc{
+                                display: flex;
+                                align-items: center;
+                                gap: 11px;
+                                    img{
+                                        margin: 0px;
+                                    }
+                                    p{
+                                        font-size: 14px;
+                                        color: var(--primary-text-color);
+                                        margin: 0px;
+                                    }
+                            }
+                    }
+                    }
+            }
+    }
+    /* MOST TRENDING SECTION END */
+
+    /* BEST REAL ESTATE SECTION START */
+    .best-real-estate{
+        padding: 94px 70px;
+            .real-estate-btns{
+                list-style: none;
+                display: flex;
+                gap: 50px;
+                overflow: auto;
+                    button{
+                        &:hover{
+                        color: var(--primary-color);
+                        border-bottom: 2px solid var(--primary-color);
+                        transition: all 0.3s linear;
+                        }
+                        max-width: 178px;
+                        font-size: 18px;
+                        color: var(--primary-text-color);
+                        padding: 15px 0px;
+                        margin-bottom: 41px;
+                        cursor: pointer;
+                        border: none;
+                        border-bottom: 2px solid #ffffff;
+                        background:none;
+                        flex-shrink: 0;
+                    }
+            }
+            .real-estate-cards{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 22px;
+                .real-estate-card{
+                    position: relative;
+                        img{
+                            width: 100%;
+                        }
+                        .real-eatate-btn-Featured,.real-eatate-btn-3D{
+                            height: 26;
+                            border-radius: 5px;
+                            padding: 6px 12px;
+                            background: #22222256;
+                            border: 1px solid #FFFFFF;
+                            font-size: 12px;
+                            color: #FFFFFF;
+                            margin-left: 14px;
+                            cursor: pointer;
+                            &:hover{
+                                box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.506);
+                                transition: all 0.4s linear;
+                            }
+                        }
+                        .real-eatate-btn-Featured{
+                            position: absolute;
+                            top: 4%;
+                            left: 0%;
+                        }
+                        .real-eatate-btn-3D{
+                            position: absolute;
+                            top: 4%;
+                            left: 21%;
+                        }
+                }
+            }
+    }
+    /* BEST REAL ESTATE SECTION END */
+}
+/* MAIN END */
+
+/* FOOTER START */
+footer{
+    padding: 35px 70px 24px;
+    .footer-text-container{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        margin-bottom: 35px;
+            .footer-flora-description{
+                width: 351px;
+                img{
+                    height: 50px;
+                    margin-bottom: 26px;
+                }
+                p{
+                    font-size: 16px;
+                    color: var(--sec-text-color);
+                    margin-bottom: 14px;
+                    line-height: 26px;
+                }
+            }
+            .flora-info{
+                display: flex;
+                gap: 60px;
+                    .service,.about{
+                        h1{
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: var(--primary-text-color);
+                            margin-bottom: 20px;
+                        }
+                        ul{
+                            list-style: none;
+                                li{
+                                    margin-bottom: 16px;
+                                    font-size: 16px;
+                                    color: var(--primary-text-color);
+                                        &:last-child{
+                                            margin-bottom: 0px;
+                                        }
+                                }
+                        }
+                    }
+                    .our-location{
+                        h1{
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: var(--primary-text-color);
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            font-size: 16px;
+                            color: var(--primary-text-color);
+                            margin-bottom: 16px;
+                        }
+                        .socials{
+                            display: flex;
+                            gap: 16px;
+                            a{
+
+                                img{
+                                background-color: var(--primary-color);
+                                border-radius: 50%;
+                                padding: 12px;
+                            }
+                            }
+                        }
+                    }
+            }
+    }
+    .footer-rights{
+        padding-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #2222221A;
+            p{
+                font-size: 14px;
+                color: var(--primary-text-color);
+            }
+            .terms-and-policy{
+                display: flex;
+                gap: 30px;
+            }
+    }
+}
+/* FOOTER END */
+
+
+/* MEDIA GUERY START */
+
+/* mobile */
+@media screen and (max-width: 992px) {
+/* GLOPALE STYLE START */
+    .title{
+        font-size: 30px;
+    }
+    .sub-title{
+        font-size: 15px;
+    }
+/* GLOPALE STYLE END */
+
+/* HEADER START */
+    header{
+        /* NAV START */
+        nav{
+            padding: 30px 20px;
+            .logo{
+                width: 46px;
+                height: 35px;
+            }
+            ul,.login{
+                display: none !important;
+            }
+            .menu{
+                display: block !important;
+                padding-right: 10px;
+            }
+        }
+        /* NAV END */
+
+        /* HERO START */
+        .hero{
+            background-size: 100%;
+            padding: 0px;
+            h1{
+                font-size: 35px;
+                line-height: 46px;
+                padding: 0px 20px;
+            }
+            .hero-sub-title{
+                max-width: 294px;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 0px 20px;
+            }
+            .hero-info{
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                gap: 20px;
+                padding: 20px;
+            }
+        }
+        /* HERO END */
+    }
+/* HEADER END */
+
+/* MAIN START */
+    main{
+        /* HOW IT WORKS SECTION START */
+        .how-it-works{
+            padding:64px 20px 42px 20px ;
+        }
+        /* HOW IT WORKS SECTION END */
+
+        /* FIND DREAM HOME SECTION START */
+        .find-dream-home{
+            background-position: center;
+            .find-dream-home-text{
+                gap: 15px;
+                h1{
+                    font-size: 30px;
+                    line-height: 56px;
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+
+            }
+        }
+        /* FIND DREAM HOME SECTION END */
+
+        /* MOST TRENDING SECTION START */
+        .most-trending{
+            padding:64px 20px 42px 20px ;
+                .most-trending-cards{
+                    a{
+                    .card{
+                        .card-img{
+                            width: 288px;
+                            height: 190px;
+                        }
+                        .card-text{
+                            width: 100% !important;
+                            margin-bottom: 72px;
+                            h2{
+                                font-size: 16px;
+                            }
+                        }
+                        .card-loc{
+                            p{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                }
+        }
+        /* MOST TRENDING SECTION END */
+
+        /* BEST REAL ESTATE SECTION START */
+        .best-real-estate{
+            padding:64px 20px 42px 20px ;
+            h1{
+                font-size: 34px;
+            }
+            .real-estate-btns{
+                gap: 30px;
+                button{
+                    font-size: 16px;
+                    height: max-content;
+                }
+            }
+                .real-estate-cards{
+                    .real-estate-card{
+                        img{
+                            width: 320px;
+                            height: 235px;
+                        }
+                        .real-eatate-btn-3D{
+                            left: 23%;
+                        }
+                    }
+                }
+        }
+        /* BEST REAL ESTATE SECTION END */
+    }
+/* MAIN END */
+
+/* FOOTER START */
+    footer{
+        padding: 20px;
+        .footer-text-container{
+            flex-direction: column;
+            gap:24px;
+            .footer-flora-description{
+                width: auto;
+                padding-left: 8px;
+                p{
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+            .flora-info{
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+        .footer-rights{
+            flex-direction: column;
+            gap: 16px;
+                p{
+                    font-size: 16px;
+                }
+        }
+        .terms-and-policy{
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+/* FOOTER END */
+}
+
+
+/* MEDIA GUERY END */
